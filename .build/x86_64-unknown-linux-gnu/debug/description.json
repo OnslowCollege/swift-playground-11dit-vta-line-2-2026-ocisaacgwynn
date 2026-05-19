@@ -1,0 +1,211 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SwiftPlayground-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/usr/bin/swiftc",
+      "fileList" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/sources",
+      "importPath" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/HelloWorld.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/swift-version-24593BA9C3E375BF.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "SwiftPlayground",
+      "moduleOutputPath" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/Modules/SwiftPlayground.swiftmodule",
+      "objects" : [
+        "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/HelloWorld.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j2",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "SwiftPlayground_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swift_playground_11dit_vta_line_2_2026_ocisaacgwynn",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/HelloWorld.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/Modules/SwiftPlayground.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/HelloWorld.swift"
+      ],
+      "tempsPath" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SwiftPlayground" : [
+      "/usr/bin/swiftc",
+      "-module-name",
+      "SwiftPlayground",
+      "-package-name",
+      "swift_playground_11dit_vta_line_2_2026_ocisaacgwynn",
+      "-c",
+      "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/HelloWorld.swift",
+      "-I",
+      "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j2",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "SwiftPlayground_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swift_playground_11dit_vta_line_2_2026_ocisaacgwynn",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SwiftPlayground" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/HelloWorld.swift"
+        }
+      ],
+      "outputFilePath" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/sources"
+    },
+    "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/HelloWorld.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/SwiftPlayground.swiftmodule.o"
+        }
+      ],
+      "outputFilePath" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.product/Objects.LinkFileList"
+    },
+    "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/swift-version-24593BA9C3E375BF.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/swift-version-24593BA9C3E375BF.txt"
+    }
+  }
+}

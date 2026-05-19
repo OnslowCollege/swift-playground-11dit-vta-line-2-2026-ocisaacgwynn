@@ -1,0 +1,73 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SwiftPlayground-x86_64-unknown-linux-gnu-debug.exe": ["<SwiftPlayground-x86_64-unknown-linux-gnu-debug.exe>"]
+  "SwiftPlayground-x86_64-unknown-linux-gnu-debug.module": ["<SwiftPlayground-x86_64-unknown-linux-gnu-debug.module>"]
+  "main": ["<SwiftPlayground-x86_64-unknown-linux-gnu-debug.exe>","<SwiftPlayground-x86_64-unknown-linux-gnu-debug.module>"]
+  "test": ["<SwiftPlayground-x86_64-unknown-linux-gnu-debug.exe>","<SwiftPlayground-x86_64-unknown-linux-gnu-debug.module>"]
+default: "main"
+nodes:
+  "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/SwiftPlayground.swiftmodule.o":
+    tool: shell
+    inputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/Modules/SwiftPlayground.swiftmodule"]
+    outputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/SwiftPlayground.swiftmodule.o"]
+    description: "Wrapping AST for SwiftPlayground for debugging"
+    args: ["/usr/bin/swiftc","-modulewrap","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/Modules/SwiftPlayground.swiftmodule","-o","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/SwiftPlayground.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/HelloWorld.swift"]
+    outputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/sources"]
+    description: "Write auxiliary file /workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/sources"
+
+  "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/HelloWorld.swift.o","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/SwiftPlayground.swiftmodule.o"]
+    outputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.product/Objects.LinkFileList"
+
+  "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/swift-version-24593BA9C3E375BF.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/usr/bin/swiftc"]
+    outputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/swift-version-24593BA9C3E375BF.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/swift-version-24593BA9C3E375BF.txt"
+
+  "<SwiftPlayground-x86_64-unknown-linux-gnu-debug.exe>":
+    tool: phony
+    inputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground"]
+    outputs: ["<SwiftPlayground-x86_64-unknown-linux-gnu-debug.exe>"]
+
+  "<SwiftPlayground-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/HelloWorld.swift.o","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/Modules/SwiftPlayground.swiftmodule"]
+    outputs: ["<SwiftPlayground-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "C.SwiftPlayground-x86_64-unknown-linux-gnu-debug.exe":
+    tool: shell
+    inputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/HelloWorld.swift.o","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/SwiftPlayground.swiftmodule.o","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.product/Objects.LinkFileList"]
+    outputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground"]
+    description: "Linking ./.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground"
+    args: ["/usr/bin/swiftc","-L","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug","-o","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground","-module-name","SwiftPlayground","-emit-executable","-Xlinker","--defsym","-Xlinker","main=SwiftPlayground_main","-Xlinker","-rpath=$ORIGIN","@/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.product/Objects.LinkFileList","-target","x86_64-unknown-linux-gnu","-g"]
+
+  "C.SwiftPlayground-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/HelloWorld.swift","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/swift-version-24593BA9C3E375BF.txt","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/sources"]
+    outputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/HelloWorld.swift.o","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/Modules/SwiftPlayground.swiftmodule"]
+    description: "Compiling Swift Module 'SwiftPlayground' (1 sources)"
+    args: ["/usr/bin/swiftc","-module-name","SwiftPlayground","-emit-dependencies","-emit-module","-emit-module-path","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/Modules/SwiftPlayground.swiftmodule","-output-file-map","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/output-file-map.json","-incremental","-c","@/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/sources","-I","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j2","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","SwiftPlayground_main","-color-diagnostics","-swift-version","6","-g","-Xcc","-fPIC","-Xcc","-g","-package-name","swift_playground_11dit_vta_line_2_2026_ocisaacgwynn","-Xcc","-fno-omit-frame-pointer"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Package.swift","/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
