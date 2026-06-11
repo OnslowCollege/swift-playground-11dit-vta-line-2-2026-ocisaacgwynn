@@ -24,7 +24,7 @@
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/HelloWorld.swift"
+          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/SwiftPlayground.swift"
         },
         {
           "kind" : "file",
@@ -39,7 +39,7 @@
       "moduleName" : "SwiftPlayground",
       "moduleOutputPath" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules/SwiftPlayground.swiftmodule",
       "objects" : [
-        "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/index-build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/HelloWorld.swift.o"
+        "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/index-build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/SwiftPlayground.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -60,6 +60,7 @@
         "-entry-point-function-name",
         "-Xfrontend",
         "SwiftPlayground_main",
+        "-parse-as-library",
         "-swift-version",
         "6",
         "-Xfrontend",
@@ -89,7 +90,7 @@
       ],
       "prepareForIndexing" : true,
       "sources" : [
-        "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/HelloWorld.swift"
+        "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/SwiftPlayground.swift"
       ],
       "tempsPath" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/index-build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build",
       "wholeModuleOptimization" : false
@@ -106,7 +107,7 @@
       "-package-name",
       "swift_playground_11dit_vta_line_2_2026_ocisaacgwynn",
       "-c",
-      "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/HelloWorld.swift",
+      "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/SwiftPlayground.swift",
       "-I",
       "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/index-build/x86_64-unknown-linux-gnu/debug/Modules",
       "-target",
@@ -127,6 +128,7 @@
       "-entry-point-function-name",
       "-Xfrontend",
       "SwiftPlayground_main",
+      "-parse-as-library",
       "-swift-version",
       "6",
       "-Xfrontend",
@@ -176,7 +178,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/HelloWorld.swift"
+          "name" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/Sources/SwiftPlayground/SwiftPlayground.swift"
         }
       ],
       "outputFilePath" : "/workspaces/swift-playground-11dit-vta-line-2-2026-ocisaacgwynn/.build/index-build/x86_64-unknown-linux-gnu/debug/SwiftPlayground.build/sources"
