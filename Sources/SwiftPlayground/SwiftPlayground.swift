@@ -5,6 +5,6 @@
 struct SwiftPlayground {
     static func main() {
     let foofs: [String] = ["dog", "cat", "bird"]
-   print("type: \(foofs[0]), \(foofs[1]) or \(foofs[2])")
-   
+   print("type: \(foofs[0]), \(foofs[1]), or \(foofs[2])")
+if(readLine == foofs[1...3]){print("correct")}
     }}
