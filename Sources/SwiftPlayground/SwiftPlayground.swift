@@ -50,7 +50,7 @@ struct SwiftPlayground {
                             intResponse = Int(response) ?? -1
                             if intResponse < 0{print("those are wages or somthing not expenses or you forgot to use cents or did not round to the nearest cent")}
                             //reapeat larger loop
-                            else{while finnished{print("you earned",weekDays*dailyHours*wages-intResponse,"cents this week")
+                            else{while finnished{print("you earned",weeklyHours*wages-intResponse,"cents this week")
                                 print("would you like to quit \n1 yes\n2 no")
                                 //takes user input                    
                                     while !correct{response = readLine() ?? "" 
