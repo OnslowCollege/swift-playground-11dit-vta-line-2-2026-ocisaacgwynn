@@ -41,7 +41,7 @@ struct SwiftPlayground {
                     //lets user exit main loop
                     while !correct{
                             //propts the user
-                            print("how much do you intend to spend this week(incents)")
+                            print("how much do you intend to spend this week(in cents)")
                             //takes users response
                             response = readLine() ?? ""
                             //evaluates user response to see if they should be let out
