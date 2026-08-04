@@ -19,11 +19,11 @@ struct SwiftPlayground {
             //takes user input
             weeklyHours = Int(readLine()!) ?? -1
             //checks user input for accuracy
-            if 0 > weeklyHours || 28<weeklyHours{print("you can't work for less than no time and kids shouldnt    work more than for hours a day")}
+            if 0 > weeklyHours || 28<weeklyHours{print("you can't work for less than no time and kids shouldnt work more than for hours a day")}
             else{
-                ///asks for and verifiescreen time usage per day
+                //loops to find wages
                 while !finnished{
-                    //propts the user with a day specific quote
+                    //propts the user
                     print("how much are you paid hourly(in cents)")
                     //takes user input                    
                     while !correct{response = readLine() ?? "" 
