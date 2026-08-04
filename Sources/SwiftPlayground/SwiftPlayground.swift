@@ -56,10 +56,17 @@ struct SwiftPlayground {
                             while !correct{response = readLine() ?? "" 
                             //makes user input be a number
                         intResponse = Int(response) ?? -1
-                        if intResponse == 1{do}
+                        if intResponse == 1{done = true
+                        correct = true 
+                        finnished = true}
+                        else{correct = true
+                        finnished = true}
                         }
-                        
+                    }
+                }    
             }
         }
     }
+}
+}
 }
