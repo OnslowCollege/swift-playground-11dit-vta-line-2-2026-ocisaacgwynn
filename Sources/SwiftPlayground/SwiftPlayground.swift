@@ -5,9 +5,7 @@
 struct SwiftPlayground {
     static func main() {
         //declares variables and constants
-        var hourlyWages: Int = 0
-        let weekDays: Int = 7
-        var dailyHours: Int = -12
+        var weeklyHours: Int = -12
         var done: Bool = false
         var response: String = ""
         var intResponse: Int = -1
@@ -19,9 +17,9 @@ struct SwiftPlayground {
             //prompts the user
             print("how many hours of work have you done this week")
             //takes user input
-            dailyHours = Int(readLine()!) ?? -1
+            weeklyHours = Int(readLine()!) ?? -1
             //checks user input for accuracy
-            if 0 > dailyHours || 28<dailyHours{print("you can't work for less than no time and kids shouldnt    work more than for hours a day")}
+            if 0 > weeklyHours || 28<weeklyHours{print("you can't work for less than no time and kids shouldnt    work more than for hours a day")}
             else{
                 ///asks for and verifiescreen time usage per day
                 while !finnished{
